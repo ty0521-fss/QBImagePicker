@@ -307,7 +307,7 @@ static CGSize CGSizeScale(CGSize size, CGFloat scale) {
                                contentMode:PHImageContentModeAspectFill
                                    options:nil
                              resultHandler:^(UIImage *result, NSDictionary *info) {
-                                 if (cell.tag == indexPath.row) {
+                                 if (result && cell.tag == indexPath.row) {
                                      cell.imageView3.image = result;
                                  }
                              }];
@@ -323,7 +323,7 @@ static CGSize CGSizeScale(CGSize size, CGFloat scale) {
                                contentMode:PHImageContentModeAspectFill
                                    options:nil
                              resultHandler:^(UIImage *result, NSDictionary *info) {
-                                 if (cell.tag == indexPath.row) {
+                                 if (result && cell.tag == indexPath.row) {
                                      cell.imageView2.image = result;
                                  }
                              }];
@@ -337,7 +337,7 @@ static CGSize CGSizeScale(CGSize size, CGFloat scale) {
                                contentMode:PHImageContentModeAspectFill
                                    options:nil
                              resultHandler:^(UIImage *result, NSDictionary *info) {
-                                 if (cell.tag == indexPath.row) {
+                                 if (result && cell.tag == indexPath.row) {
                                      cell.imageView1.image = result;
                                  }
                              }];
