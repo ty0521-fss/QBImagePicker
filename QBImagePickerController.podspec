@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "QBImagePickerController"
-  s.version          = "3.4.1"
+  s.version          = "3.4.2"
   s.summary          = "A clone of UIImagePickerController with multiple selection support."
   s.homepage         = "https://github.com/ty0521-fss/QBImagePicker"
   s.license          = "MIT"
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.source_files     = "QBImagePicker/*.{h,m}"
   s.exclude_files    = "QBImagePicker/QBImagePicker.h"
   s.resource_bundles = { "QBImagePicker" => "QBImagePicker/*.{lproj,storyboard}" }
-  s.platform         = :ios, "8.0"
+  s.platform         = :ios, "10.0"
   s.requires_arc     = true
   s.frameworks       = "Photos"
 end
